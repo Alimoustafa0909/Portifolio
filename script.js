@@ -71,6 +71,5 @@ toggleBtn.addEventListener("click", () => {
 });
 
 function updateButtonText(theme) {
-  toggleBtn.textContent =
-    theme === "dark-mode" ? "️Light Mode" : "Dark Mode";
+  toggleBtn.textContent = theme === "dark-mode" ? "️Light Mode" : "Dark Mode";
 }
