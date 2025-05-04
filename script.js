@@ -42,10 +42,11 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
 
   if (!hasError) {
     alert(`Thank you for contacting us, ${name}!`);
-    // Optionally reset form:
     document.getElementById("contactForm").reset();
   }
 });
+
+// Dark Mode
 const toggleBtn = document.getElementById("toggleTheme");
 const body = document.body;
 
@@ -71,5 +72,9 @@ toggleBtn.addEventListener("click", () => {
 });
 
 function updateButtonText(theme) {
-  toggleBtn.textContent = theme === "dark-mode" ? "️Light Mode" : "Dark Mode";
+  if (theme === "dark-mode") {
+    toggleBtn.textContent = "Light Mode";
+  } else {
+    toggleBtn.textContent = "Dark Mode";
+  }
 }
