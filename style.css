@@ -73,6 +73,7 @@ h3 {
 .skills-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  /* fr == fraction think about it as a slice of pizza  */
   gap: 20px;
   list-style: none;
   padding: 0;
